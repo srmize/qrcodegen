@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     chrome.tabs.executeScript(activeTabId, {
       code: "window.getSelection().toString();"
     }, (selection) => {
-      let text = selection[0];
+      var text = selection ? selection[0] : null;
 
       if (!text) {
         text = tabs[0].url; // Fallback to URL if no text is selected
