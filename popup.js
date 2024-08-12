@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const qrCodeDiv = document.getElementById('qr-code');
       new QRCode(qrCodeDiv, {
         text: text,
-        width: 200,
-        height: 200,
+        width: 400,
+        height: 400,
       });
     });
   });
