@@ -575,7 +575,6 @@ var QRCode;
 					nLimit = QRCodeLimitLength[i][2];
 					break;
 				case QRErrorCorrectLevel.H:
-					console.log("i" + i);
 					nLimit = QRCodeLimitLength[i][3];
 					break;
 			}
